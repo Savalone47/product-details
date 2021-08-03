@@ -2,14 +2,14 @@
 session_start();
 include('inc/header.php');
 ?>
-<title>phpzag.com : Demo Product Search Filter with Ajax, PHP & MySQL</title>
+<title>Demo</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/css/bootstrap-slider.min.css" rel="stylesheet"/>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/9.8.0/bootstrap-slider.min.js"></script>
 <script src="js/search.js"></script>
 <link rel="stylesheet" href="css/style.css">
 <?php include('inc/container.php');?>
 <div class="container">		
-	<h2>Example: Product Search Filter with Ajax, PHP & MySQL</h2>
+	<h2>Product Search Filter</h2>
 	<?php
 	include 'class/Product.php';
 	$product = new Product();	
@@ -73,9 +73,3 @@ include('inc/header.php');
     </div>	
 </div>	
 <?php include('inc/footer.php');?>
-
-
-
-
-
-
