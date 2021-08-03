@@ -1,11 +1,13 @@
 <?php
 class Product {
+
 	private $host  = 'localhost';
     private $user  = 'root';
     private $password   = "";
     private $database  = "product_details";   
 	private $productTable = 'product_details';
 	private $dbConnect = false;
+
     public function __construct(){
         if(!$this->dbConnect){ 
             $conn = new mysqli($this->host, $this->user, $this->password, $this->database);
@@ -16,6 +18,7 @@ class Product {
             }
         }
     }
+
 	private function getData($sqlQuery) {
 		$result = mysqli_query($this->dbConnect, $sqlQuery);
 		if(!$result){
@@ -27,6 +30,7 @@ class Product {
 		}
 		return $data;
 	}
+	
 	private function getNumRows($sqlQuery) {
 		$result = mysqli_query($this->dbConnect, $sqlQuery);
 		if(!$result){
